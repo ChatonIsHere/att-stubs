@@ -9,9 +9,10 @@ OUT=$(cd "$(dirname "$0")" && pwd)
 M="A Township Tale_Data/Managed"
 ML="MelonLoader/net35"
 PUBLIC="Alta.Analytics.Runtime Alta.Api.Client Alta.Api.DataTransferModels Alta.Authentication
-  Alta.CommandLine Alta.Core.Runtime Alta.Global.Runtime Alta.IO Alta.NetworkTransport.Runtime Alta.Platform
+  Alta.CommandLine Alta.Core.Runtime Alta.Global.Runtime Alta.XRManagement Alta.IO Alta.NetworkTransport.Runtime Alta.Platform
   Alta.Platform.Generic Alta.Serialization.Runtime Alta.Singletons Alta.Timing.Runtime Alta.Values kcp2k
-  NLog Newtonsoft.Json Unity.InputSystem UnityEngine UnityEngine.CoreModule UnityEngine.IMGUIModule"
+  NLog Newtonsoft.Json Unity.InputSystem UnityEngine UnityEngine.CoreModule UnityEngine.IMGUIModule
+  UnityEngine.PhysicsModule UnityEngine.TerrainModule"
 tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
 mkdir -p "$OUT/$M" "$OUT/$ML"
